@@ -16,9 +16,9 @@ class Parking():
         ticket_count = 1
         new_amount = quantity - ticket_count
         available_parking = parking - ticket_count
-        new_ticket = Ticket(new_amount, available_parking)
+        new_ticket = Tickets(new_amount, available_parking)
         self.list.append(new_ticket)
-        print('Please take your ticket')
+        # print('Please take your ticket')
         # print(f'There are now {new_amount} tickets available and {available_parking} parking spaces open.')
         return
         
@@ -60,10 +60,10 @@ class Parking():
 
 
 class Tickets():
-    def __init__(self, ticket, parking):
-        self.ticket = ticket
-        self.parking = parking
-    pass
+    def __init__(self, new_amount, available_parking):
+        self.new_amount = new_amount
+        self.available_parking = available_parking
+
 
 
 garage = Parking()
