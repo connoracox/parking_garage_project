@@ -11,7 +11,7 @@ class Parking():
         while True:
             self.current_ticket['quantity'] -= 1
             self.current_ticket['parking'] -= 1
-            print('Please take your ticket')
+            print('Please take your parking ticket')
             print(
                 f"Currently there are {self.current_ticket['quantity']} tickets and {self.current_ticket['parking']} parking spaces available.")
             return
